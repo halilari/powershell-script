@@ -9,11 +9,11 @@ Write-Host "Num Args:" $args.Length;
     Write-Output '-user - - - > User Gather Information'
     Write-Output '-system - - - > System Gather Information'
     Write-Output '-service - - - > Service Gather Information'
-    Write-Output '-interfaces - - - > Service Gather Information'
-    Write-Output '-schedule - - - > Service Gather Information'
-    Write-Output '-netstat - - - > Service Gather Information'
-    Write-Output '-domaininfo - - - > Service Gather Information'
-    Write-Output '-services - - - > Service Gather Information'
+    Write-Output '-interfaces - - - > Interfaces Gather Information'
+    Write-Output '-schedule - - - > Schedule Gather Information'
+    Write-Output '-netstat - - - > Netstat Gather Information'
+    Write-Output '-domaininfo - - - > Domaininfo Gather Information'
+    Write-Output '-groupinfo- - - > Groupİnfo Gather Information'
 
   }
   If($args[0] -eq '-system')
@@ -83,6 +83,11 @@ Write-Host "Num Args:" $args.Length;
   if($args[0] -eq '-domaininfo')
   {
     Get-ADDomain
+   
+  }
+  if($args[0] -eq '-groupinfo')
+  {
+    Get-ADGroup -filter
    
   }
 
