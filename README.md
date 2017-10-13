@@ -52,3 +52,5 @@ netstat -ant
 get-process
 
 -domaininfo: Domain hakkındaki bilgileri getirir.
+
+Get-ADDomain
